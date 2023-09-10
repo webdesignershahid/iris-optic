@@ -1,0 +1,167 @@
+.location {
+    .location-banner {
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        @include md-devices {
+            margin-bottom: 80px;
+        }
+        .title {
+            font-size: 40px;
+            font-family: var(--font-secondary);
+            line-height: 1.2;
+            color: #20166c;
+            font-weight: 500;
+
+            @include sm-devices {
+                font-size: 60px;
+            }
+            @include lg-devices {
+                font-size: 80px;
+            }
+            @include xl-devices {
+                font-size: 100px;
+            }
+        }
+    }
+    .accordion {
+        .accordion-item {
+            border: 0;
+            border-radius: 0;
+            margin: 30px 0;
+
+            .accordion-header {
+                letter-spacing: 1px;
+                font-size: 18px;
+                color: #20166c;
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0 15px;
+
+                @include sm-devices {
+                    gap: 0 25px;
+                }
+                @include md-devices {
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                }
+
+                &::after {
+                    content: '\f067';
+                    float: right;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+                &[aria-expanded="true"]::after {
+                    content: '\f068';
+                }
+
+                span {
+                    flex: 1;
+                    height: 1px;
+                    width: auto;
+                    min-width: 40px;
+                    background-color: #cccccc;
+                }
+            }
+            .accordion-body {
+                padding: 20px 0;
+                address {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #000;
+                    @include md-devices {
+                        font-size: 18px;
+                    }
+                }
+                h5 {
+                    font-size: 28px;
+                    font-family: var(--font-secondary);
+                    color: #20166c;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                ul.bullet {
+                    list-style-type: disc;
+                    margin-left: 22px;
+                    li {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #000;
+                        line-height: 1.9;
+                        @include md-devices {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .map {
+                    margin: 35px 0;
+
+                    iframe {
+                        height: 250px;
+                        width: 100%;
+                        max-width: 560px;
+                        @include lg-devices {
+                            height: 430px;
+                            max-width: 730px;
+                        }
+                    }
+                }
+                .text-with-icon {
+                    @include md-devices {
+                        margin-left: -80px;
+                    }
+                    li {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0 20px;
+                        @include md-devices {
+                            gap: 0 30px;
+                        }
+                        .icon {
+                            padding-top: 10px;
+                        }
+                        
+                        .text {
+                            flex: 1;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #000;
+                            line-height: 1.9;
+                            @include md-devices {
+                                font-size: 18px;
+                            }
+                        }
+
+                        & + li {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+                .button {
+                    margin-top: 40px;
+                    a {
+                        font-weight: 500;
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        border-radius: 0;
+                        background-color: #fff;
+                        border: 2px solid #20166c;
+                        color: #20166c;
+                        padding: 14px 30px;
+                        transition: all 0.3s ease-out 0s;
+
+                        &:hover {
+                            color: #fff;
+                            background-color: #20166c;
+                        }                      
+                    }
+                }
+            }
+        }
+    }
+}

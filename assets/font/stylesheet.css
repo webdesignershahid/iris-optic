@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Jost';
+    src: local('Jost Light'), local('Jost-Light'),
+        url('Jost-Light.woff2') format('woff2'),
+        url('Jost-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: local('Jost Regular'), local('Jost-Regular'),
+        url('Jost-Regular.woff2') format('woff2'),
+        url('Jost-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Jost';
+    src: local('Jost Medium'), local('Jost-Medium'),
+        url('Jost-Medium.woff2') format('woff2'),
+        url('Jost-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: local('Bodoni Moda Medium'), local('BodoniModa-Medium'),
+        url('BodoniModa-Medium.woff2') format('woff2'),
+        url('BodoniModa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: local('Bodoni Moda Regular'), local('BodoniModa-Regular'),
+        url('BodoniModa-Regular.woff2') format('woff2'),
+        url('BodoniModa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

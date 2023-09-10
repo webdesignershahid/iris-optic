@@ -1,0 +1,179 @@
+.contact {
+    margin: 40px 0;
+
+    .contact-banner {
+        margin-bottom: 25px;
+        @include sm-devices {
+            margin-bottom: 30px;
+        }
+        @include md-devices {
+            margin-bottom: 50px;
+        }
+        .title {
+            font-size: 40px;
+            font-family: var(--font-secondary);
+            line-height: 1.2;
+            color: #20166c;
+            font-weight: 500;
+
+            @include sm-devices {
+                font-size: 60px;
+            }
+            @include lg-devices {
+                font-size: 80px;
+            }
+            @include xl-devices {
+                font-size: 100px;
+            }
+        }
+    }
+    .contact-inner {
+        .contact-info {
+            h6 {
+                font-size: 16px;
+                letter-spacing: 2px;
+                line-height: 1.5;
+                color: #20166c;
+                font-weight: 500;
+                
+                @include md-devices {
+                    line-height: 2;
+                    font-size: 18px;
+                }
+                @include lg-devices {
+                    font-size: 20px;
+                }
+                @include xl-devices {
+                    font-size: 22px;
+                }
+            }
+            p {
+                font-size: 14px;
+                font-weight: 500;   
+                line-height: 1.8;
+                
+                @include md-devices {
+                    font-size: 16px;
+                }
+                @include lg-devices {
+                    line-height: 2.5;
+                }
+            }
+        }
+
+        .contact-form {
+            @include max-sm {
+                margin-top: 50px;
+            }
+            h5 {
+                font-size: 21px;
+                line-height: 1.5;
+                color: #20166c;
+                font-weight: 500;
+                font-family: var(--font-secondary);
+                margin-bottom: 20px;
+                @include sm-devices {
+                    margin-bottom: 30px;
+                }
+                @include md-devices {
+                    font-size: 24px;
+                }
+                @include lg-devices {
+                    margin-bottom: 40px;
+                }
+            }
+            h6 {
+                font-size: 14px;
+                letter-spacing: 2px;
+                line-height: 20px;
+                color: #8c8c8c;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            label {
+                font-size: 14px;
+                letter-spacing: 2px;
+                line-height: 20px;
+                color: #8c8c8c;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            .form-group {
+                margin-bottom: 30px;
+            }
+            .form-control {
+                border-radius: 0;
+                border: 0;
+                padding: 0;
+                border-bottom: 1px solid #cccccc; 
+                padding-bottom: 10px;
+                font-size: 12px;
+                letter-spacing: 2px;
+                font-weight: 500;
+                color: #8c8c8c;
+                text-transform: uppercase;
+
+                @include md-devices {
+                    font-size: 14px;
+                }
+                
+                &::placeholder {
+                    color: #8c8c8c;
+                }
+            }
+            textarea.form-control {
+                border: 1px solid #cccccc;
+                padding: 15px;
+                
+            }
+            .upload-label {
+                border: 1px solid #cccccc;
+                font-size: 15px;
+                text-align: center;
+                color: #8c8c8c;
+                display: block;
+                padding: 17px 25px;
+                cursor: pointer;
+                margin-bottom: 18px;
+                letter-spacing: 0;
+                span {
+                    color: #000;
+                    text-decoration: underline;
+                }
+
+                i {
+                    margin-right: 10px;
+
+                }
+            }
+            .note {
+                font-size: 15px;
+                line-height: 20px;
+                color: #20166c;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+
+            .submit {
+                margin-top: 30px;
+                button {
+                    background-color: #fff;
+                    border: 2px solid #20166c;
+                    color: #20166c;
+                    letter-spacing: 2px;
+                    padding: 12px 30px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    transition: all 0.3s ease-out 0s;
+                    position: relative;
+                    z-index: 1;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #20166c;
+                    }
+                }
+            }
+        }
+    }
+}

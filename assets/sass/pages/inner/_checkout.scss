@@ -1,0 +1,309 @@
+.checkout-wrapper {
+    margin: 80px 0;
+
+    .breadcrumb-wrap {
+        margin-bottom: 30px;
+    }
+    h1 {
+        margin-bottom: 25px;
+        font-family: var(--font-secondary);
+        color: #20166c;
+        font-size: 30px;
+        font-weight: 500;
+
+        @include sm-devices {
+            font-size: 34px;
+        }
+        @include md-devices {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+        @include lg-devices {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    form {
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+            
+            @include lg-devices {
+                margin-bottom: 30px;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            .invalid-feedback {
+                font-size: 12px;
+            }
+        }
+        .form-control {
+            padding: 0;
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid #20166c;
+            height: 50px;
+            letter-spacing: 2px;
+            box-shadow: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: #8c8c8c;
+
+            &::placeholder {
+                color: #8c8c8c;
+            }
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .nice-select {
+            float: inherit;
+            .current {
+                font-size: 14px;
+                font-weight: 500;
+                color: #8c8c8c;
+                position: relative;
+                top: 5px;
+            }
+            .list {
+                transform: none;
+                .option {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #8c8c8c;
+                }
+            }
+        }
+        .form-check {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 0 16px;
+            cursor: pointer;
+            flex-wrap: wrap;
+            label {
+                user-select: none;
+                color: #808080;
+                flex: 1;
+                cursor: pointer;
+                transition: all 0.1s;
+                font-size: 16px;
+            }
+            input {
+                border-radius: 0;
+                box-shadow: none;
+                border-color: #999999;
+                margin: 0;
+                border-width: 2px;
+                
+                &:active, &:focus-visible, &:checked {
+                    box-shadow: none;
+                    border-color: currentColor;
+                    background-color: #20166c;
+                    background-image: none;
+                }
+                &:checked + label {
+                    color: #20166c;
+                }
+            }                
+        }
+    }
+    .payment-method {
+        @include lg-devices {
+            margin-top: -140px;
+        }
+    }
+    .cart-list {
+        > ul {
+            > li {
+                display: flex;
+                flex-wrap: wrap;
+                .product-img {
+                    border: 2px solid rgba(0,0,0,0.1);
+                    background-color: #fff;
+                    padding: 8px;
+                    height: 110px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .product-information {
+                    flex: 1;
+                    margin-left: 20px;
+                }
+                .name-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    font-family: var(--font-secondary);
+                    font-size: 22px;
+                    margin-bottom: 5px;
+
+                    @include md-devices {
+                        font-size: 28px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        font-family: var(--font-primary);
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                    }
+                }
+                .model {
+                    color: #808080;
+                    font-size: 17px;
+                    font-weight: 300;
+                    @include md-devices {
+                        font-size: 20px;
+                    }
+                    @include xl-devices {
+                        font-size: 22px;
+                    }
+                }
+                ul:not(.list) {
+                    margin: 15px 0 10px;
+
+                    li {
+                        color: #808080;
+                        font-size: 14px;
+                        font-weight: 300;
+                        @include sm-devices {
+                            display: inline-block;
+                        }
+                        i {
+                            margin-right: 5px;
+                        }
+                        & + li {
+                            @include sm-devices {
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+                }
+                form {
+                    border-bottom: 1px solid #ccc;
+
+                    i {
+                        color: #20166c;
+                    }
+                }
+                .form-group {
+                    margin: 0;
+                }
+                .nice-select {
+                    border: 0;
+                    padding: 0;
+                    width: 36px;
+                }
+                & +li {
+                    margin-top: 20px;
+                    @include lg-devices {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .add-gift-card {
+        background-color: #f5f5f5;
+        padding: 30px;
+        @include sm-devices {
+            padding: 40px;
+        }
+        @include lg-devices {
+            margin-top: 60px;
+            padding: 60px;
+        }
+
+        h3 {
+            font-family: var(--font-secondary);
+            color: #20166c;
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            @include lg-devices {
+                font-size: 30px;
+            }
+        }
+
+        .form-control {
+            background-color: transparent; 
+            letter-spacing: 2px;
+            font-weight: 300;
+            font-size: 14px;
+            @include lg-devices {
+                font-size: 15px;
+            }
+        }
+        .btn {
+            border-bottom: 1px solid #20166c;
+            border-radius: 0;
+            font-size: 20px;
+            padding-right: 0;
+        }
+        .cost-list {
+            li {
+                font-size: 18px;
+                color: #808080;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0 15px;
+
+                & + li {
+                    margin-top: 15px;
+                }
+
+                span {
+                    color: #20166c;
+                    letter-spacing: 2px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .total-cost {
+            h2 {
+                font-family: var(--font-secondary);
+                color: #20166c;
+                font-size: 24px;
+                font-weight: 500;
+                @include lg-devices {
+                    font-size: 28px;
+                }
+                span {
+                    color: #20166c;
+                    letter-spacing: 2px;
+                    font-family: var(--font-primary);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .checkout-action {
+        button {
+            border: 2px solid #20166c;
+            padding: 14px 20px;
+            border-radius: 0;
+            font-size: 14px;
+            letter-spacing: 2px;
+            transition: all 0.25s ease-out 0s;
+
+            &:hover {
+                background-color: #20166c;
+                color: #fff;
+            }
+        }
+    }
+}

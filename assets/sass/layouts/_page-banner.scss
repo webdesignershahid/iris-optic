@@ -1,0 +1,16 @@
+.page-banner {
+    height: 150px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75;
+    @include sm-devices {
+        height: 250px;
+    }
+    @include md-devices {
+        height: 300px;
+    }
+    @include xl-devices {
+        height: 460px;
+    }
+}

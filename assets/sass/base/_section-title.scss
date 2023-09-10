@@ -1,0 +1,24 @@
+.section-title {
+    margin-bottom: 40px;
+
+    .title {
+        font-size: 28px;
+        line-height: 1.3;
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        color: #20166c;
+
+        @include sm-devices {
+            font-size: 32px;
+        }
+        @include md-devices {
+            font-size: 38px;
+        }
+        @include lg-devices {
+            font-size: 42px;
+        }
+        @include xl-devices {
+            font-size: 46px;
+        }
+    }
+}

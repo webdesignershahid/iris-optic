@@ -1,0 +1,140 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+footer {
+    // margin-top: 200px;
+    margin-top: 100px;
+    .footer-top {
+        border-top: 2px solid rgba(#000, 0.15);
+        border-bottom: 2px solid rgba(#000, 0.15);
+        padding: 60px 0;
+
+        .subscribe-widget {
+            h4 {
+                font-family: var(--font-secondary);
+                color: #000;
+                font-size: 28px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            p {
+                max-width: 380px;
+                line-height: 1.75;
+                font-size: 14px;
+                
+                @include xl-devices {
+                    max-width: 480px;
+                    font-size: 16px;
+                }
+            }
+            form {
+                margin: 40px 0;
+                max-width: 370px;
+                @include xl-devices {
+                    max-width: 470px;
+                }
+                .input-group {
+                    margin-bottom: 30px;
+                    border-bottom: 1px solid #20166c;
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+                .form-control {
+                    padding: 0 0 10px 0;
+                    border: 0;
+                    border-radius: 0;
+                    color: #808080;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+
+                    &::placeholder {
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                a {
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                }
+                button {
+                    font-size: 14px;
+                    margin-top: 30px;
+                    border: 2px solid #20166c;
+                    padding: 14px 50px;
+                    background-color: transparent;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    color: #20166c;
+                    transition: all 0.3s ease-out;
+
+                    @include xl-devices {
+                        margin-top: 40px;
+                    }
+
+                    &:hover {
+                        background-color: #20166c;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .widget {
+            .widget-title {
+                font-size: 13px;
+                color: #000;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            ul {
+                li {
+                    margin: 5px 0;
+                    a {
+                        color: #808080;
+                        display: inline-block;
+                        letter-spacing: 1px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        transition: all 0.2s;
+                        @include xl-devices {
+                            letter-spacing: 2px;
+                            font-weight: 500;
+                        }
+
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 35px 0;
+        p {
+            font-family: var(--font-secondary);
+            font-style: italic;
+        }
+        .logo {
+            width: 160px;
+        }
+        .nav {
+            li:nth-child(1) {
+                margin-right: 30px;
+                color: #20166c;
+                font-weight: 500;
+                font-size: 14px;
+            }
+            a {
+                margin: 0 5px;
+                color: #000;
+            }
+        }
+    }
+}
